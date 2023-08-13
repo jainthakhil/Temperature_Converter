@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌡️ Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+    </style>
+
+    <div class="tempContainer">
+        <div class="input">
+            <form action="">
+                    <label class="label" >Enter Temperature</label>
+                    <div class="input-section">
+                        <input type="number" id="tempValue"  placeholder="Temperature">
+                        <select name="inputUnit" id="inputUnit">
+                            <option value="celcius">Celcius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                        </select>
+
+                    </div>
+
+                    <div class="arrow"><span><i class="fa-solid fa-arrow-down fa-xl" style="color: #102C57;"></i></span></div>
+            
+                    <span class="to">Convert in</span> <br>
+                    
+                    <select name="outputUnit" id="outputUnit" >
+                        <option value="" disabled selected>Conversion Unit</option>
+                        <option value="celcius">celcius</option>
+                        <option value="fahrenheit">fahrenheit</option>
+                    </select> <br>
+
+                    <div class="btn">
+                        <button type="button" id="result-btn">Convert</button>
+
+                    </div>
+                    
+            </form>
+        </div>
+
+        <div class="output">
+            <span class="result" id="convertedValue"><i class="fa-solid fa-temperature-high fa-lg" style="color: #fff;"></i></span>
+        </div>
+        
+    </div>
+    <footer>Made by Akhil Jainth ©️ 2023</footer>
+    <script src="script.js"></script>
+</body>
+</html>

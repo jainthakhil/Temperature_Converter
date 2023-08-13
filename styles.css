@@ -1,0 +1,172 @@
+html{
+    background-image: -webkit-linear-gradient(50deg, #102C57 50%, #EEEDED 50%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* parent container */
+.tempContainer{
+    width: 700px;
+    height: 350px;
+    display: flex;
+    border: 3px solid #102C57;
+    border-radius: 25px;
+    border-top-right-radius:25px;
+    border-top: none;
+}
+
+/* form-section */
+form{
+    margin: 30px 30px;
+    padding-top: 20px;
+}
+
+/* left container */
+.input{
+    background-color: #EEEDED;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/* color to label and span */
+.label, .to{
+    color:#102C57 ;
+    font-weight: 500;
+}
+
+
+/* filling area */
+.input-section{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* input */
+#tempValue{
+    width: 200px;
+    height: 100%;
+    margin-right: -4px;
+    padding: 0px 10px 0px 10px;
+    border: 1px solid gray;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+
+/* given unit select */
+#inputUnit{
+    width: 40px;
+    height:100%;
+    margin-left: -4px;
+    padding: 0 4px;
+    border: 1px solid gray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* removing the outlines of input and select */
+#inputUnit:focus, #outputUnit{
+    outline: none;
+}
+
+/* conversion unit select */
+#outputUnit{
+    width: 232px;
+    height: 30px;
+    margin: 10px 0 0 0;
+    border: 1px solid gray;
+    border-radius: 25px;
+    color: gray;
+    padding: 0 5px;
+}
+
+select option{
+    color: black;
+}
+
+/* placeholder in select */
+select option[disabled] {
+    color: gray; 
+}
+
+/* button div */
+.btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result-btn{
+    margin: 30px auto;
+}
+
+/* down arrow div */
+.arrow{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* rigth container */
+.output{
+    background-color: #102C57 ;
+    /* background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=900&t=st=1691922748~exp=1691923348~hmac=5e0de11f70adf1be02073fc3af390b4b66d051b9ad448acd5162bb509f3db613); */
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    /* border-bottom-left-radius: 25px; */
+}
+
+/* converted temp */
+.result{
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* convert button */
+button{
+    color: white;
+    width: 100px;
+    height: 30px;
+    background-color:  #102C57;
+    border: none;
+    border-radius: 25px;
+    margin: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+    color: #EEEDED;
+    font-weight: 300;
+}
