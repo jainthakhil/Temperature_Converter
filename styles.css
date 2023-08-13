@@ -170,3 +170,36 @@ footer{
     color: #EEEDED;
     font-weight: 300;
 }
+
+@media only screen and (max-width:767px) {
+
+    html{
+        background-image: none;
+    }
+    
+    .tempContainer{
+        /* flex-direction: column; */
+        height: 500px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        text-align: center;
+    }
+
+    .input{
+        height: 300px;
+    }
+    .output{
+        height: 150px;
+    }
+
+    form{
+        margin: 0;
+        padding: 0;
+    }
+
+    #tempValue, #outputUnit{
+        width: 150px;
+    }
+
