@@ -22,7 +22,7 @@ body{
     width: 700px;
     height: 350px;
     display: flex;
-    border: 3px solid #102C57;
+    background: transparent;
     border-radius: 25px;
     border-top-right-radius:25px;
     border-top: none;
@@ -42,7 +42,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 25px;
 }
 
 /* color to label and span */
@@ -57,6 +57,8 @@ form{
     width: 100%;
     height: 30px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px 0 20px 0;
 }
 
@@ -76,12 +78,16 @@ input:focus{
     
 }
 
+select{
+    border-radius: 0;
+}
+
 /* given unit select */
 #inputUnit{
-    width: 40px;
+    width: 35px;
     height:100%;
     margin-left: -4px;
-    padding: 0 4px;
+    padding-right: 4px ;
     border: 1px solid gray;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -115,13 +121,11 @@ select option[disabled] {
 /* button div */
 .btn{
     width: 100%;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#result-btn{
-    margin: 30px auto;
+    padding-top:40px ;
 }
 
 /* down arrow div */
@@ -136,15 +140,13 @@ select option[disabled] {
 /* rigth container */
 .output{
     background-color: #102C57 ;
-    /* background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg?w=900&t=st=1691922748~exp=1691923348~hmac=5e0de11f70adf1be02073fc3af390b4b66d051b9ad448acd5162bb509f3db613); */
     margin: 0;
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    /* border-bottom-left-radius: 25px; */
+    border-radius: 25px;
 }
 
 /* converted temp */
@@ -160,8 +162,7 @@ button{
     height: 30px;
     background-color:  #102C57;
     border: none;
-    border-radius: 25px;
-    margin: 0;
+    border-radius: 25px;   
 }
 
 footer{
@@ -173,12 +174,7 @@ footer{
 
 @media only screen and (max-width:767px) {
 
-    html{
-        background-image: none;
-    }
-    
     .tempContainer{
-        /* flex-direction: column; */
         height: 500px;
         flex-direction: column-reverse;
         align-items: center;
@@ -189,9 +185,11 @@ footer{
 
     .input{
         height: 300px;
+        width: 80%;
     }
     .output{
         height: 150px;
+        width: 80%;
     }
 
     form{
@@ -200,6 +198,15 @@ footer{
     }
 
     #tempValue, #outputUnit{
-        width: 150px;
+        width: 50%;
     }
 
+    button{
+        width: 50%;
+    }
+
+    footer{
+        visibility: hidden;
+
+    }
+}
